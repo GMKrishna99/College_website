@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- header -->
+     <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./images/lol.png" alt="logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="bi bi-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="./index.html">Home</a></li>
+                    <li> <a href="./About.html">About</a></li>
+                    <li> <a href="./courses.html">Course</a></li>
+                    <li> <a href="./blog.html">Blog</a></li>
+                    <li> <a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+        </nav>
+        <h1> Our Certificate & Online Programs For 2022</h1>
+     </section>
+      <!-- blog content -->
+      <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="./images/certificate.jpg" alt="certificate">
+                <h2>Our Certificate & Online Programs For 2022</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, nobis voluptatibus nam fugit similique nostrum provident eos quibusdam! Numquam sed dolore eveniet magni vel sapiente libero quo facilis fugit. Quae obcaecati, doloribus quo cupiditate corrupti culpa cum dicta quis error, vero accusamus numquam quas magnam eaque. Atque nesciunt sapiente perspiciatis.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto impedit soluta quo consequatur alias veritatis assumenda atque quidem minus delectus, voluptates quaerat cupiditate excepturi labore accusantium nostrum sapiente incidunt sed, expedita maiores. Itaque quasi provident quisquam. Architecto eligendi ab minima debitis porro culpa ad, autem a ea quaerat ullam nostrum?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aperiam at repellendus et iste expedita ducimus deleniti, assumenda omnis perspiciatis corporis harum, animi delectus similique aliquam nemo placeat quasi beatae, distinctio voluptate quod repudiandae cumque. Quod ducimus possimus reiciendis quis ex ea reprehenderit nihil, quia beatae! Sit animi tempora sequi.</p>
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="Email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post categories</h3>
+                <div>
+                    <span>Business analytics</span>
+                    <span>01</span>
+                </div>
+                <div>
+                    <span>Business analytics</span>
+                    <span>02</span>
+                </div>
+                <div>
+                    <span>Business analytics</span>
+                    <span>03</span>
+                </div>
+                <div>
+                    <span>Business analytics</span>
+                    <span>04</span>
+                </div>
+                <div>
+                    <span>Business analytics</span>
+                    <span>05</span>
+                </div>
+            </div>
+        </div>
+      </section>
+ <!-- footer -->
+ <section class="footer">
+    <h4>About us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorem ex, quibusdam vero<br> ipsam quia sapiente alias animi beatae aliquam nihil commodi, quos porro libero.</p>
+    <div class="icons">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-linkedin"></i>
+    </div>
+    <p>made with <i class="bi bi-heart"></i> mohan krishna </p>
+ </section>
+     <!-- javascript for toggel menu -->
+     <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+     </script>
+</body>
+</html>

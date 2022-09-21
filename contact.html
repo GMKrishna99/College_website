@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- header -->
+     <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./images/lol.png" alt="logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="bi bi-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="./index.html">Home</a></li>
+                    <li> <a href="./About.html">About</a></li>
+                    <li> <a href="./courses.html">Course</a></li>
+                    <li> <a href="./blog.html">Blog</a></li>
+                    <li> <a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+        </nav>
+        <h1>CONTACT US</h1>
+     </section>
+<!-- CONTACT US -->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.4743330045803!2d79.39563671482915!3d13.628885690427081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d4b3cad0b13e3%3A0xb9635a2a9d920c7d!2sSRI%20VENKATESWARA%20UNIVERSITY!5e0!3m2!1sen!2sin!4v1663691033770!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="bi bi-house"></i>
+             <span>
+                <h5>SVU CAMPUS, Sri Venkateswara University, Sri Padmavati Mahila Visvavidyalayam.</h5>
+                <p>Tirupati, Andhra Pradesh 517501</p>
+             </span>
+            </div>
+            <div> 
+                <i class="bi bi-phone"></i>
+            <span>
+                <h5>+91-1234567890</h5>
+                <p>Monday to Saturday</p>
+            </span>
+            </div>
+            <div>
+                <i class="bi bi-envelope"></i>
+                <span>
+                <h5>svu@gmail.com</h5>
+                <p>Email your qurey</p>
+            </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your Name" required>
+                <input type="email" name="email" placeholder="Enter Email Address" required>
+                <input type="text" name="subject" placeholder="Enter your Subject" required>
+                <textarea  rows="8" name="message" placeholder="Message"></textarea>
+                <button class="hero-btn red-btn"> Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+ <!-- footer -->
+ <section class="footer">
+    <h4>About us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorem ex, quibusdam vero<br> ipsam quia sapiente alias animi beatae aliquam nihil commodi, quos porro libero.</p>
+    <div class="icons">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-linkedin"></i>
+    </div>
+    <p>made with <i class="bi bi-heart"></i> mohan krishna </p>
+ </section>
+     <!-- javascript for toggel menu -->
+     <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+     </script>
+</body>
+</html>
